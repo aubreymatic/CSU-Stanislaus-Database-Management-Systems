@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="mainPage.css">
+
+<title>CS4250 Music Database Project</title>
+
+</head>
+
+<body>
+
+<p><h2>Warrior Music Library</h2></p>
+
+<b>Team Members:</b> Chris Golpashin, Jacob Cook, Danial Bahrami Siavashani
+
+<hr>
+<p><b>Relations:</b></p>
+
+<ol>
+<li><a href="https://hopper.csustan.edu/~cgolpashin/cs4250/relations/Album.html">Album</a></li>
+<li><a href="https://hopper.csustan.edu/~cgolpashin/cs4250/relations/Artist.html">Artist</a></li>
+<li><a href="https://hopper.csustan.edu/~cgolpashin/cs4250/relations/ArtistFan.html">ArtistFan</a></li>
+<li><a href="https://hopper.csustan.edu/~cgolpashin/cs4250/relations/ArtistWeb.html">ArtistWeb</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/Award.html">Award</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/AwardPresenter.html">AwardPresenter</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/Becomes.html">Becomes</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/Compiles.html">Compiles</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/Compose.html">Compose</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/Contain.html">Contain</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/GroupBio.html">GroupBio</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/GroupMemberOf.html">GroupMemberOf</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/Instrument.html">Instrument</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/MusicGroup.html">MusicGroup</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/Musician.html">Musician</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/MusicianBio.html"">MusicianBio</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/Records.html">Records</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/Song.html">Song</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/SongLyrics.html">SongLyrics</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/Track.html">Track</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/TrackLyrics.html">TrackLyrics</a></li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/relations/achieves.html">achieves</a></li>
+</ol>
+
+<hr>
+<p><b>Queries:</b></p>
+
+<ol>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/queries/query1.html">Query 1</a>: This Query selects song names and their connected artist of the Artist Aleda. It connects three tables: Artist, Songs, and Compose. This way we can grab data from on both the song and the artist.</li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/queries/query2.html">Query 2</a>: This query searches for awards that were awarded in VietNam and returns the name. we need to connect the award table and the presenter table so we can get date from both.</li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/queries/query3.html">Query 3</a>: This query is returning first name , last name , and the birthdate of the musicians Ordered by Birth date. This query however is showing all 60 Musianis from the descending order. Our youngest Musicians was born on 2000-08-30.</li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/queries/query4.html">Query 4</a>: This query Looks up all the Artist names and returns the number of names that start with ‘A’. the result is 7 names.</li>
+<li><a href="http://hopper.csustan.edu/~cgolpashin/cs4250/queries/query5.html">Query 5</a>: This query selects all of the artists that are of the Metal Genre and returns their Fansite.</li>
+</ol>
+
+<hr>
+<p><b>Ad-hoc Query:</b></p>
+
+<form METHOD=POST ACTION="textboxSql.php">
+   <table>
+     <tr>
+       <td align = right>
+          <strong>Please enter your query here<br></strong>
+       </td>
+       <td>
+          <input type=text size=130 maxlength=280 name="query">
+       </td>
+     </tr>
+     <tr>
+       <td align = right>
+          <input type=reset value="Clear">
+       </td>
+       <td>
+          <input type=submit value="Submit">
+       </td>
+     </tr>
+   </table>
+</form>
+
+</body>
+
+</html>
